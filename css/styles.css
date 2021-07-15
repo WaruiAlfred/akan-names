@@ -4,3 +4,13 @@
 .intro p{
   font-weight: normal;
 }
+.content{
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  background-color: rgb(75, 126, 170);
+  height: 300px;
+  text-align: justify;
+  font-size: x-large;
+}
