@@ -22,3 +22,23 @@ function defineAkanName(){
   //actual day of the week
   let dayOfWeek = (centuryCalc + yearCalc + monthCalc + dayValue)%7;
 }
+
+//List of Akan day names by order from Sunday as index 0.
+const maleAkanNames = [
+  "Kwasi",
+  "Kwadwo",
+  "Kwabena",  
+  "Kwaku",
+  "Yaw",
+  "Kofi",
+  "Kwame"
+];
+const femaleAkanNames = [
+  "Akosua",
+  "Adwoa",
+  "Abenaa",
+  "Akua",
+  "Yaa",
+  "Afua",
+  "Ama"
+]
