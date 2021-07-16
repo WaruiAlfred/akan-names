@@ -8,15 +8,16 @@
   margin: auto;
   padding: 30px;
   border-radius: 10px;
-  width: 300px;
-  background-color: gray;
+  width: 350px;
+  background-color: grey;
   height: 300px;
   text-align: justify;
   font-size: x-large;
+  float: left;
 }
 input[type=submit]{
-  width: 200px;
-  height: 30px;
+  width: 340px;
+  height: 35px;
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
   border-radius: 10px;
@@ -24,6 +25,28 @@ input[type=submit]{
 input[type=submit]:hover{
   background-color: black;
   color: white;
+}
+input [type=number]{
+  display: inline;
+  gap: 0px;
+}
+#day{
+  height: 30px;
+  font-size: large;
+  border-radius: 9px;
+  width: 100px;
+}
+#month{
+  height: 30px;
+  font-size: large;
+  border-radius: 9px;
+  width: 100px;
+}
+#year{
+  height: 30px;
+  font-size: large;
+  border-radius: 9px;
+  width: 100px;
 }
 body{
   background-image: url("../images/akan.jpg");
