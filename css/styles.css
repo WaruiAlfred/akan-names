@@ -53,3 +53,11 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.table{
+  background-color: white;
+  float: right;
+}
+table{
+  width: 350px;
+  height: 350px;
+}
