@@ -12,8 +12,10 @@
       </div>
       <div class="content">
         <form>
-          <label for="birthday">Your birthday:</label>
-          <input type="date"><br>
+          <p>Your birthday:</p>
+          <input type="number" id="day" placeholder="Day" min="1" max="31" required>
+          <input type="number" id="month" placeholder="month" min="1" max="12" required>
+          <input type="number" id="year" placeholder="year" required>
           <p>What is your gender?</p>
           <label for="Male">
           <input id="Male" value="Male" type="radio" name="Male-Female">Male
