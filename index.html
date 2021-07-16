@@ -11,19 +11,19 @@
         <p>This application takes a user's birthday and calculates the day of the week they were born then tells them their Akan(Ghanian) names depending on their gender.</p>
       </div>
       <div class="content">
-        <form class="form">
+        <form class="form"  action="#" onsubmit="deriveAkanName()">
           <p>Your birthday:</p>
           <input type="number" id="day" placeholder="Day" min="1" max="31" required>
           <input type="number" id="month" placeholder="month" min="1" max="12" required>
           <input type="number" id="year" placeholder="year" required>
           <p>Select your gender</p>
-          <select for="gender" id="gender">
+          <select id="gender" name="gender">
             <option disabled selected>Gender</option>
-            <option id="male">Male</option>
-            <option id="female">Female</option>
+            <option>Male</option>
+            <option>Female</option>
           </select><br><br>
        
-          <input type="submit" value="submit" onclick="deriveAkanName()">
+          <button  type="submit" value="submit">Submit</button>
         </form>
       </div>
       <div class="table">
