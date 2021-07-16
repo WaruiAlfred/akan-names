@@ -15,14 +15,14 @@
   font-size: x-large;
   float: left;
 }
-input[type=submit]{
+button{
   width: 340px;
   height: 35px;
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
   border-radius: 10px;
 }
-input[type=submit]:hover{
+button:hover{
   background-color: black;
   color: white;
 }
