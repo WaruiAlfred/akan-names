@@ -17,7 +17,6 @@ const femaleAkanNames = [
   "Afua"
 ];
 
-// This function collects the data from input fields
 function fetchFormData() {
   let form = document.forms[0];
   let day, month, year, gender;
@@ -31,8 +30,8 @@ function fetchFormData() {
   return [gender, day, month, year];
 }
 /* The function calculates the day of the week from a specific date.*/
-function calculateWeekDay(birthDate) {
-  let [dayOfMonth, monthOfYear, yearOfBirth] = birthDate;
+function calculateDayOfWeek(bD) {
+  let [dayOfMonth, monthOfYear, yearOfBirth] = bD;
   let zeroBasedCentury, yearOfCentury;
 
   // Count Jan & Feb  as months 13 and 14 of the previous year.
@@ -56,28 +55,21 @@ function calculateWeekDay(birthDate) {
       )) %
     7;
 
-  // return dayOfWeek as a zero-based index
-  // dayOfWeek = (0 = Saturday, 1 = Sunday, 2 = Monday, ..., 6 = Friday)
   return dayOfWeek;
 }
 
-/**
- * Initialize deriveAkanName function.
- * The function calls the calcWeekDay function and derives the user gender
- * from the Akan Name arrays defined at the top
- */
+//This function derives the Akan name from the list above of a user according to their birthday and gender.
 function deriveAkanName() {
   let formData = fetchFormData();
-  let userBirthDate, userGender, dayOfWeek;
+  let bD, userGender, dayOfWeek;
 
-  [userGender, ...userBirthDate] = formData;
-  dayOfWeek = calculateWeekDay(userBirthDate);
+  [userGender, ...bD] = formData;
+  dayOfWeek = calculateDayOfWeek(bD);
 
   if (userGender === "Male") {
     alert("Your Akan Name is: " + maleAkanNames[dayOfWeek]);
   } else {
     alert("Your Akan Name is: " + femaleAkanNames[dayOfWeek]);
   }
-  // Helps clear the input fields after retrieving the values
   return false;
 }
