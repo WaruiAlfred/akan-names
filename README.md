@@ -13,7 +13,7 @@ In this project I created an application that collects a user's birthday as well
 |Program behaviour|Expected Input|Expected Output|
 |:---:            |:---:         |:---:          |
 |It validates date input|Day>0 and <31 Month>0 and <12|Day Input cannot be less than 1 or more than 31.Month cannot be less than 1 or more than 12.|
-|Derives Akan Name|Birthday and gender|Your Akan names is:...|
+|Derives Akan Name|Birthday and gender|Your Akan names is....|
 ## Known Bugs
 There is no known bug at the moment.
 ## Technologies Used
@@ -22,8 +22,8 @@ I used the following languages to create the web application:
   * CSS
   * Javascript
 ## Contact me
-[Email me](alfred.kahenya@student.moringaschool.com)\
-My phone number:[0740365281]
+Email me:alfred.kahenya@student.moringaschool.com\
+My phone number:0740365281
 ### License
 *License under [MIT License](LICENSE)*\
 Copyright (c) 2021 **Alfred Warui**
